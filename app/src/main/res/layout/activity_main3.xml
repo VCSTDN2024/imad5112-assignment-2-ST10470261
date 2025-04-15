@@ -5,6 +5,62 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/thirdbackgroundimg"
     tools:context=".MainActivity3">
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="278dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="112dp"
+        android:gravity="center"
+        android:text="You Scored :"
+        android:textColor="@color/yellow"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="296dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginBottom="120dp"
+        android:gravity="center"
+        android:text="26/10"
+        android:textColor="@color/yellow"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="146dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="183dp"
+        android:backgroundTint="@color/EstorilBlue"
+        android:text="Review"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="146dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="183dp"
+        android:backgroundTint="@color/EstorilBlue"
+        android:text="Exit"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
