@@ -11,60 +11,67 @@
     tools:context=".MainActivity2">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="317dp"
-        android:layout_height="54dp"
+        android:id="@+id/question_Txt"
+        android:layout_width="373dp"
+        android:layout_height="55dp"
         android:layout_marginTop="70dp"
-        android:text="TextView"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Is the following statement true or false?"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="317dp"
-        android:layout_height="54dp"
+        android:id="@+id/statement_Txt"
+        android:layout_width="390dp"
+        android:layout_height="46dp"
         android:layout_marginTop="164dp"
-        android:text="TextView"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text=""
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="126dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="44dp"
+        android:id="@+id/trueBtn"
+        android:layout_width="137dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="40dp"
         android:layout_marginBottom="216dp"
         android:backgroundTint="@color/EstorilBlue"
-        android:textSize="28dp"
         android:text="True"
+        android:textSize="26dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="126dp"
-        android:layout_height="64dp"
+        android:id="@+id/nextBtn"
+        android:layout_width="139dp"
+        android:layout_height="62dp"
         android:layout_marginStart="140dp"
         android:layout_marginEnd="145dp"
         android:layout_marginBottom="108dp"
         android:backgroundTint="@color/EstorilBlue"
-        android:textSize="28dp"
         android:text="Next"
+        android:textSize="26dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="126dp"
+        android:id="@+id/falseBtn"
+        android:layout_width="136dp"
         android:layout_height="64dp"
         android:layout_marginEnd="44dp"
         android:layout_marginBottom="216dp"
         android:backgroundTint="@color/EstorilBlue"
-        android:textSize="28dp"
         android:text="False"
+        android:textSize="26dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
