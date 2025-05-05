@@ -25,60 +25,63 @@
 
     <TextView
         android:id="@+id/scoreTxt"
-        android:layout_width="296dp"
-        android:layout_height="123dp"
-        android:layout_marginTop="116dp"
+        android:layout_width="250dp"
+        android:layout_height="109dp"
         android:layout_marginBottom="120dp"
         android:gravity="center"
         android:text=""
+        android:textAlignment="center"
         android:textColor="@color/yellow"
-        android:textSize="30dp"
+        android:textSize="45dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/reviewBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/feedback_Msg"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549" />
 
     <Button
         android:id="@+id/reviewBtn"
-        android:layout_width="146dp"
-        android:layout_height="59dp"
+        android:layout_width="159dp"
+        android:layout_height="62dp"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="128dp"
         android:backgroundTint="@color/EstorilBlue"
         android:text="Review"
-        android:textSize="19dp"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/exitBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.855" />
 
     <Button
         android:id="@+id/exitBtn"
-        android:layout_width="146dp"
-        android:layout_height="59dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="124dp"
+        android:layout_width="159dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="24dp"
         android:backgroundTint="@color/EstorilBlue"
         android:text="Exit"
-        android:textSize="19dp"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.855" />
 
     <TextView
         android:id="@+id/feedback_Txt"
-        android:layout_width="338dp"
-        android:layout_height="50dp"
+        android:layout_width="339dp"
+        android:layout_height="60dp"
         android:layout_marginTop="68dp"
         android:layout_marginBottom="25dp"
         android:gravity="center"
         android:text=""
         android:textColor="@color/yellow"
-        android:textSize="20dp"
+        android:textSize="36dp"
         app:layout_constraintBottom_toTopOf="@+id/exitBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scoreTxt"
-        app:layout_constraintVertical_bias="0.583" />
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

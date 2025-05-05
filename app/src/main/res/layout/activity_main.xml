@@ -1,52 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
     android:background="@drawable/backgroundimg"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/welcoming_Msg"
-        android:layout_width="395dp"
-        android:layout_height="wrap_content"
+        android:layout_width="399dp"
+        android:layout_height="88dp"
         android:text="POP! Quiz!!!!!"
         android:textAlignment="center"
-        android:textSize="52dp"
+        android:textColor="@color/yellow"
+        android:textSize="60dp"
         android:textStyle="bold"
-        android:textColor="@color/white"
-        android:layout_marginBottom="290dp"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
 
     <TextView
         android:id="@+id/app_Instr"
-        android:layout_width="match_parent"
-        android:layout_height="44dp"
-        android:layout_marginBottom="10dp"
+        android:layout_width="385dp"
+        android:layout_height="69dp"
         android:gravity="center"
+        android:text="  When ready to begin, click the start button below."
         android:textAlignment="center"
-        android:textSize="17dp"
-        android:textColor="@color/white"
-        android:text="  When ready to begin, click the start button below." />
+        android:textColor="@color/yellow"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.209" />
 
     <Button
         android:id="@+id/startBtn"
-        android:layout_width="267dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="130dp"
-        android:text="Start"
+        android:layout_width="265dp"
+        android:layout_height="75dp"
         android:backgroundTint="@color/EstorilBlue"
-        android:textSize="28dp" />
+        android:text="Start"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.628" />
 
     <Button
         android:id="@+id/exitBtn"
-        android:layout_width="272dp"
-        android:layout_height="wrap_content"
-        android:textSize="28dp"
+        android:layout_width="264dp"
+        android:layout_height="70dp"
         android:backgroundTint="@color/EstorilBlue"
-        android:text="Exit" />
+        android:text="Exit"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

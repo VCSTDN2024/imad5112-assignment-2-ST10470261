@@ -15,6 +15,7 @@ class MainActivity3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        setContentView(R.layout.activity_main3)
 
         val scoreText = findViewById<TextView>(R.id.scoreTxt)
         val feedbackTxt = findViewById<TextView>(R.id.feedback_Txt)
@@ -24,11 +25,7 @@ class MainActivity3 : AppCompatActivity() {
         val score = intent.getIntExtra("score", 0)
         scoreText.text = "$score/10"
 
-        val feedback = if (score >= 5) {
-            "Good Job!"
-        } else {
-            "Keep trying!"
-        }
+        val feedback = if (score >= 5) {    "Great job!"} else {    "Keep practicing!"}
         feedbackTxt.text = feedback
 
         reviewButton.setOnClickListener {

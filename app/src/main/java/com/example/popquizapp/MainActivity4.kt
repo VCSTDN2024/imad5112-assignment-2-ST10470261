@@ -16,6 +16,7 @@ class MainActivity4 : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main4)
 
+
         val reviewTextView = findViewById<TextView>(R.id.reviewTxt)
         val restartButton = findViewById<Button>(R.id.restartBtn)
         val exitButton = findViewById<Button>(R.id.exitBtn)
@@ -23,19 +24,19 @@ class MainActivity4 : AppCompatActivity() {
         val questions = intent.getStringArrayExtra("questions")
         val answers = intent.getBooleanArrayExtra("answers")
 
+
         val reviewText = StringBuilder()
         if (questions != null && answers != null && questions.size == answers.size) {
             for (i in questions.indices) {
                 reviewText.append("${i + 1}. ${questions[i]}\n")
                 reviewText.append(" Answer: ${if (answers[i]) "True" else "False"}\n\n")
             }
-            reviewTextView.text = reviewText.toString()
-        } else {
-            reviewTextView.text = "No review available."
+
         }
+        reviewTextView.text = reviewText.toString()
 
         restartButton.setOnClickListener {
-            val intent = Intent(this, MainActivity2::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
         exitButton.setOnClickListener {

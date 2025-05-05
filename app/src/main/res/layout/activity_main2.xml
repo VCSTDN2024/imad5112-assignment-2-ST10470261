@@ -12,36 +12,40 @@
 
     <TextView
         android:id="@+id/question_Txt"
-        android:layout_width="373dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="70dp"
+        android:layout_width="400dp"
+        android:layout_height="178dp"
         android:gravity="center"
-        android:textStyle="bold"
+        android:text=""
         android:textColor="@color/white"
-        android:text="Is the following statement true or false?"
-        android:textSize="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
 
     <TextView
         android:id="@+id/statement_Txt"
         android:layout_width="390dp"
         android:layout_height="46dp"
-        android:layout_marginTop="164dp"
         android:gravity="center"
-        android:textColor="@color/white"
         android:text=""
-        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294" />
 
     <Button
         android:id="@+id/trueBtn"
-        android:layout_width="137dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="40dp"
+        android:layout_width="160dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
         android:layout_marginBottom="216dp"
         android:backgroundTint="@color/EstorilBlue"
         android:text="True"
@@ -51,8 +55,8 @@
 
     <Button
         android:id="@+id/nextBtn"
-        android:layout_width="139dp"
-        android:layout_height="62dp"
+        android:layout_width="186dp"
+        android:layout_height="53dp"
         android:layout_marginStart="140dp"
         android:layout_marginEnd="145dp"
         android:layout_marginBottom="108dp"
@@ -65,9 +69,9 @@
 
     <Button
         android:id="@+id/falseBtn"
-        android:layout_width="136dp"
-        android:layout_height="64dp"
-        android:layout_marginEnd="44dp"
+        android:layout_width="169dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="216dp"
         android:backgroundTint="@color/EstorilBlue"
         android:text="False"
